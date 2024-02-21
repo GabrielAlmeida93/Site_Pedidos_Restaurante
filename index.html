@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArMarinho</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('imagens/background2.jpg');background-size: cover; background-repeat: repeat-y; background-position: center"> <!---->
+   
+  
+<main>
+    
+    <section id = "index" class="Janela active"> 
+       
+        <div id = "boasvindas" class="descricao">
+            <div id = "cabecalho" >
+                <button class="homeButton" type=" button"><img src="imagens/voltar.png"></button>   
+                <img src="imagens/seloicone.webp" alt="" >
+                <button   type=" button" class = "fazerpedido" onclick="fazerPedido()"><img src="imagens/carrinho.png"></button>
+            </div>  
+            
+            
+            <h2 id = "indextitulo">Ar Marinho<br> O melhor do mar na sua casa.</h2>
+            <p id="indextext">
+            
+            O pedido mínimo consiste em uma porção de frutos do mar, marisco ou peixe, mais uma porção de acompanhamento, podendo ser arroz, massa ou salada.<br>
+            Olhe o Menu e veja nossas opções. <br>
+            Adicione suas porções ao carrinho e faça seu pedido.   
+            </p>
+            
+                <div id = "botaoMenu">
+                <h1 id = "indextitulo">Menu</h1>
+                <button     type=" button" onclick="menu()" ><img src="imagens/menu.png"></button>
+                </div>
+               
+                
+        </div>
+
+        <div class="botoes-index" id = "menu">
+            <div id = "cabecalho" >
+                <button class="homeButton" type=" button" onclick="VoltarDemenu()"><img src="imagens/voltar.png"></button>   
+                <img src="imagens/seloicone.webp" alt="" >
+                <button   type=" button" class = "fazerpedido" onclick="fazerPedido()"><img src="imagens/carrinho.png"></button>
+            </div>
+            
+            <h1 id = "indextitulo">Menu</h1>
+            <div>
+                <button type=" button" onclick="frutosDoMar()"><img src="imagens/iconeFrutosdoMar.jpg" alt=""> </button>
+                <button type=" button" onclick="pescados()"><img src="imagens/iconePescados.jpg" alt=""></button>
+            </div>
+            <div>   
+                <button type=" button" onclick="arroz()"><img src="imagens/icone arroz.jpg" alt=""></button> 
+                <button type=" button" onclick="massas()"><img src="imagens/iconeMassas.jpg" alt=""></button>
+                <button type=" button" onclick="salada()"><img src="imagens/iconeSaladas.png" alt=""></button>
+            </div>
+        </div>
+       
+        
+        
+    </section>  
+
+    <section id = "opcoes" class="Janela">
+        <div id = "cabecalho" >
+            <button class="homeButton" type=" button"  onclick="VoltarDeOpcoes()" ><img src="imagens/voltar.png"></button>   
+            <img src="imagens/seloicone.webp" alt="" >
+            <button   type=" button" class = "fazerpedido" onclick="fazerPedido()"><img src="imagens/carrinho.png"></button>
+        </div>  
+        
+        <section>
+            <h2 id = "opcoes_h2">Opções de:</h2>
+            <p>Texto a ser inserido posteriormente.</p>
+        </section>
+        
+        <section class="botoes-opcoes">
+            <div class="botoes-opcoes">
+                
+                <div>
+                <button id="but1" type=" button"> <img id = "op1" ></button>
+                <p id="opcaoP1" >Texto a ser inserido posteriormente para Opção 1.</p>
+                </div>
+                
+               
+                <div>
+                <button id="but2" type=" button"><img id = "op2"></button>
+                <p id="opcaoP2">Texto a ser inserido posteriormente para Opção 2.</p>
+                </div>
+            </div>
+    
+            <div class="botoes-opcoes">
+                <div>
+                    <button id="but3" type=" button"><img id = "op3"></button>
+                    <p id="opcaoP3">Texto a ser inserido posteriormente para Opção 3.</p>
+                </div>
+                <div>
+                    <button id="but4" type=" button"><img id = "op4"></button>
+                    <p id="opcaoP4">Texto a ser inserido posteriormente para Opção 4.</p>
+                </div>
+            </div>
+            
+            
+        
+        </section>    
+        
+        
+    </section>
+
+    <section id = "detalhes" class="Janela">
+        <div id = "cabecalho" >
+            <button class="homeButton" type=" button"  onclick="VoltarDeDetalhes()"><img src="imagens/voltar.png"></button>   
+            <img src="imagens/seloicone.webp" alt="" >
+            <button   type=" button" class = "fazerpedido" onclick="fazerPedido()"><img src="imagens/carrinho.png"></button>
+        </div>  
+      
+        <section>
+            <h2 id="nome">Nome do Prato</h2>
+            <img id ="img" alt="Foto do prato">
+            <p id = "texto">Descrição do prato.</p>
+        </section>
+       
+    </section>
+    
+</main>
+
+
+    <footer>
+        <p>Endereço: Rua Tupi, 60, Herrique Jorge, Fortaleza-CE</p>
+        <p>Telefone: (85) 987251440</p>
+        <p>Whatsapp: (85) 987251440</p>
+        </a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
